@@ -1,0 +1,154 @@
+cabal-version: 2.2
+
+-- This file has been generated from package.yaml by hpack version 0.38.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           dsl
+version:        1.0.0
+license:        BSD-3-Clause
+build-type:     Simple
+
+executable dsl_compiler
+  main-is: Main.hs
+  other-modules:
+      DSL.Cxt
+      DSL.CxtUtils
+      DSL.Database
+      DSL.Dict
+      DSL.ElabKind
+      DSL.ElabTm
+      DSL.ElabTy
+      DSL.EvalCxt
+      DSL.EvalKind
+      DSL.EvalTy
+      DSL.Expr
+      DSL.InstanceResolution
+      DSL.JS.CodeGen
+      DSL.JS.JSPretty
+      DSL.Lexer
+      DSL.Location
+      DSL.MarkTailCalls
+      DSL.MetaStore
+      DSL.Name
+      DSL.Namespace
+      DSL.Parser
+      DSL.Pat
+      DSL.PatUtils
+      DSL.PMatch
+      DSL.PrettyKind
+      DSL.PrettyTy
+      DSL.PrettyUtils
+      DSL.ProcessClass
+      DSL.ProcessDef
+      DSL.ProcessFile
+      DSL.ProcessTyDef
+      DSL.QuoteTy
+      DSL.ScanTmDefs
+      DSL.Token
+      DSL.TraceDep
+      DSL.TravTm
+      DSL.TyHasMeta
+      DSL.Types
+      DSL.UnifyKind
+      DSL.UnifyTy
+      DSL.UnifyUtils
+      DSL.Utils
+      DSL.WeakenTm
+      Utils.Graph
+      Utils.Misc
+      Utils.Search
+      Utils.Vec
+      Paths_dsl
+  autogen-modules:
+      Paths_dsl
+  hs-source-dirs:
+      app/
+  default-extensions:
+      AllowAmbiguousTypes
+      Arrows
+      BlockArguments
+      ConstraintKinds
+      DataKinds
+      DefaultSignatures
+      DeriveAnyClass
+      DeriveFoldable
+      DeriveFunctor
+      DeriveGeneric
+      DeriveTraversable
+      DerivingStrategies
+      DerivingVia
+      DuplicateRecordFields
+      EmptyCase
+      ExplicitForAll
+      FlexibleContexts
+      FlexibleInstances
+      FunctionalDependencies
+      GADTs
+      GeneralizedNewtypeDeriving
+      ImportQualifiedPost
+      LambdaCase
+      LiberalTypeSynonyms
+      MultiParamTypeClasses
+      MultiWayIf
+      NamedFieldPuns
+      NumericUnderscores
+      OverloadedLabels
+      OverloadedRecordDot
+      OverloadedStrings
+      PartialTypeSignatures
+      PatternSynonyms
+      QuasiQuotes
+      RankNTypes
+      RecordWildCards
+      RecursiveDo
+      ScopedTypeVariables
+      StandaloneDeriving
+      TemplateHaskell
+      TupleSections
+      TypeApplications
+      TypeFamilies
+      TypeOperators
+      UndecidableInstances
+      ViewPatterns
+      NoImplicitPrelude
+  ghc-options: -Wall -Wno-name-shadowing -Wno-orphans -O2 -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      aeson
+    , base
+    , bytestring
+    , co-log
+    , co-log-core
+    , containers
+    , data-default
+    , diagnose ==2.5.1
+    , directory
+    , dlist
+    , exceptions
+    , filepath
+    , free
+    , hashable
+    , hashtables ==1.4.2
+    , indexed-traversable
+    , megaparsec
+    , monad-dijkstra
+    , mtl
+    , neat-interpolation
+    , optics
+    , optics-core
+    , optics-th
+    , optparse-applicative
+    , parser-combinators
+    , prettyprinter
+    , relude
+    , scientific
+    , semialign
+    , text
+    , these
+    , time
+    , trie-simple
+    , unix
+    , unordered-containers
+    , vector
+    , witherable
+  default-language: Haskell2010

@@ -1,0 +1,19 @@
+{
+  "name": "runtime-js",
+  "version": "1.0.0",
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.28.2",
+  "devDependencies": {
+    "@types/node": "^25.2.3",
+    "rolldown": "1.0.0-rc.9",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@esfx/async": "^1.0.0",
+    "effect": "^3.19.17",
+    "immutable": "^5.1.4"
+  }
+}
