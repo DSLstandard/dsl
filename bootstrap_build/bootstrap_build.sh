@@ -37,6 +37,8 @@ echo
 
 pushd "$JS_ENV_DIR"
 
+pnpm install
+
 pnpx rolldown \
   'src/main_stage1.ts' \
   --platform node \
