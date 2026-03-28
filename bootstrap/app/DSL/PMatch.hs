@@ -673,7 +673,7 @@ compilePatternMatching cxt CompilePatternMatchingParams{scrutineeTy = rootScrutT
         (clause : _otherClauses) -> do
           case findSplitTarget clause.tests of
             Nothing -> do
-              panic "PMatch: Bad simplificatio/tmp/nix-shell.fMWo2U/stack-a358bcfcc473f1d7n. Did the simplification rules miss a case?"
+              panic "PMatch: Bad simplification. Did the simplification rules miss a case?"
             Just (originPat, targetLvl, targetType) -> do
               caseSplit prob (originPat, targetLvl, targetType)
 
