@@ -113,18 +113,6 @@ compile params = do
       writeFileBS outputPath outputSource
       putTextLn $ "[!] Done"
 
-dev :: IO ()
-dev = do
-  compile
-    CompileParams
-      { srcDir = "script"
-      , -- , mainFile = "main.dsl"
-        mainFile = "small.dsl"
-      , outputJSPath = "js/src/generated.js"
-      , jsForeignImportModule = "./dsl_foreign"
-      , debugging = True
-      }
-
 main :: IO ()
 main = do
   join $ O.execParser opts
